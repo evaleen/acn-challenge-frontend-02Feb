@@ -7,12 +7,18 @@ import 'react-bootstrap';
 class App extends Component {
   render() {
     return (
-      <form>
-        First name:<br>
-        <input type="text" name="firstname"><br>
-        Last name:<br>
-        <input type="text" name="lastname">
-      </form>
+      <div>
+        <form>
+        <input type="file" name="cv"></input>
+        <input type="text" name="first"></input>
+        <input type="text" name="last"></input>
+        <input type="text" name="title"></input>
+        <span>First name</span>
+        <span>Last name</span>
+        <span>Job Title</span>
+        <button>POST</button>
+        </form>
+      </div>
     );
   }
 }
